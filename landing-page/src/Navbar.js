@@ -54,6 +54,7 @@ function Navbar() {
           <li><Link to="/" style={{ color: 'white', textDecoration: 'none' }} onClick={() => setSidebarOpen(false)}>Home</Link></li>
           <li><Link to="/snake" style={{ color: 'white', textDecoration: 'none' }} onClick={() => setSidebarOpen(false)}>Snake Game</Link></li>
           <li><Link to="/match-pairs" style={{ color: 'white', textDecoration: 'none' }} onClick={() => setSidebarOpen(false)}>Match Pairs</Link></li>
+          <li><Link to="/cat-images" style={{ color: 'white', textDecoration: 'none' }} onClick={() => setSidebarOpen(false)}>Get Cat Images</Link></li>
           <li><button className="btn btn-link p-0" style={{ color: 'white', textDecoration: 'none' }}>About</button></li>
           <li><button className="btn btn-link p-0" style={{ color: 'white', textDecoration: 'none' }}>Contact</button></li>
         </ul>
