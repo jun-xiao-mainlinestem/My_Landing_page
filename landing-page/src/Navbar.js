@@ -75,8 +75,8 @@ function Navbar() {
           <li><Link to="/snake" style={{ color: 'white', textDecoration: 'none' }} onClick={() => setSidebarOpen(false)}>Snake Game</Link></li>
           <li><Link to="/match-pairs" style={{ color: 'white', textDecoration: 'none' }} onClick={() => setSidebarOpen(false)}>Match Pairs</Link></li>
           <li><Link to="/cat-images" style={{ color: 'white', textDecoration: 'none' }} onClick={() => setSidebarOpen(false)}>Get Cat Images</Link></li>
-          <li><button className="btn btn-link p-0" style={{ color: 'white', textDecoration: 'none' }}>About</button></li>
-          <li><button className="btn btn-link p-0" style={{ color: 'white', textDecoration: 'none' }}>Contact</button></li>
+          <li><Link to="/features" style={{ color: 'white', textDecoration: 'none' }} onClick={() => setSidebarOpen(false)}>About</Link></li>
+          <li><a href="https://github.com/ericjiangxiao/" target="_blank" rel="noopener noreferrer" style={{ color: 'white', textDecoration: 'none' }} onClick={() => setSidebarOpen(false)}>Contact</a></li>
         </ul>
       </div>
     </>
