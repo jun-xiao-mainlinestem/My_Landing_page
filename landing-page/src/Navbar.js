@@ -31,14 +31,34 @@ function Navbar() {
 
   return (
     <>
-      <nav className="navbar navbar-light bg-light">
+      <style>{`
+        .navbar.bg-darker {
+          background-color: #d1d5db !important;
+        }
+        .menu-btn {
+          transition: background 0.2s, color 0.2s, border 0.2s;
+        }
+        .menu-btn:hover, .menu-btn:focus {
+          background-color: darkgreen !important;
+          color: #fff !important;
+          border-color: darkgreen !important;
+        }
+        .menu-btn .hamburger {
+          color: darkgreen;
+          transition: color 0.2s;
+        }
+        .menu-btn:hover .hamburger, .menu-btn:focus .hamburger {
+          color: #fff;
+        }
+      `}</style>
+      <nav className="navbar navbar-light bg-darker">
         <button
-          className="btn"
+          className="btn menu-btn"
           style={{ backgroundColor: '#e0e0e0', color: 'darkgreen', border: '2px solid darkgreen', marginLeft: '12px' }}
           onClick={() => setSidebarOpen(true)}
           aria-label="Open menu"
         >
-          <span style={{ color: 'darkgreen', fontSize: '1.5rem', lineHeight: '1' }}>&#9776;</span>
+          <span className="hamburger" style={{ fontSize: '1.5rem', lineHeight: '1' }}>&#9776;</span>
         </button>
       </nav>
       <div style={overlayStyle} onClick={() => setSidebarOpen(false)} />
